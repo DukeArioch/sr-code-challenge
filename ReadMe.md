@@ -59,10 +59,6 @@ For all endpoints that require an "id" in the URL, this is the "employeeId" fiel
 ## What to Implement
 Clone or download the repository, do not fork it.
 
-localhost:8080/api/employee/16a596ae-edd3-4847-99fe-c4518e82c86f
-
-localhost:8080/api/employee/ReportingStructure/16a596ae-edd3-4847-99fe-c4518e82c86f
-
 ### Task 1
 Create a new type, ReportingStructure, that has two properties: employee and numberOfReports.
 
@@ -83,9 +79,6 @@ the fully filled out ReportingStructure for the specified employeeId. The values
 not be persisted.
 
 ### Task 2
-localhost:8080/api/employee/Compensation/16a596ae-edd3-4847-99fe-c4518e82c86f
-
-localhost:8080/api/employee/Compensation/
 Create a new type, Compensation. A Compensation has the following fields: employee, salary, and effectiveDate. Create 
 two new Compensation REST endpoints. One to create and one to read by employeeId. These should persist and query the 
 Compensation from the persistence layer.
