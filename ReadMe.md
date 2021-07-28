@@ -60,6 +60,11 @@ For all endpoints that require an "id" in the URL, this is the "employeeId" fiel
 Clone or download the repository, do not fork it.
 
 ### Task 1
+* READ
+    * HTTP Method: GET 
+    * URL: localhost:8080/api/employee/ReportingStructure/{id}
+    * RESPONSE: ReportingStructure
+
 Create a new type, ReportingStructure, that has two properties: employee and numberOfReports.
 
 For the field "numberOfReports", this should equal the total number of reports under a given employee. The number of 
@@ -79,6 +84,16 @@ the fully filled out ReportingStructure for the specified employeeId. The values
 not be persisted.
 
 ### Task 2
+* CREATE
+    * HTTP Method: POST 
+    * URL: localhost:8080/api/employee/Compensation/
+    * PAYLOAD: Compensation
+    * RESPONSE: Compensation
+* READ
+    * HTTP Method: GET 
+    * URL: localhost:8080/api/employee/Compensation/{id}
+    * RESPONSE: Compensation
+
 Create a new type, Compensation. A Compensation has the following fields: employee, salary, and effectiveDate. Create 
 two new Compensation REST endpoints. One to create and one to read by employeeId. These should persist and query the 
 Compensation from the persistence layer.
